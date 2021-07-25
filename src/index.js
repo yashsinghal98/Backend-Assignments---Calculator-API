@@ -34,7 +34,7 @@ app.post('/add',(req,res)=>{
             });
             return;
         }
-        if(c>10000000||a>10000000||b>10000000){
+        if(a>10000000||b>10000000||c>10000000){
             res.send({
                 status:"error",
                 message:"Overflow"
@@ -75,7 +75,7 @@ app.post('/sub',(req,res)=>{
             });
             return;
         }
-        if(c>10000000||a>10000000||b>10000000){
+        if(a>10000000||b>10000000||c>10000000){
             res.send({
                 status:"error",
                 message:"Overflow"
