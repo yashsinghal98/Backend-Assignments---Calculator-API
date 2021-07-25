@@ -19,7 +19,7 @@ app.get("/",(req,res)=>{
 app.post('/add',(req,res)=>{
     let a=req.body.num1;
     let b=req.body.num2;
-    if(!a||!b){
+     if(a===undefined||b===undefined){
         res.status(404).send({
             status:"failure"
         });
@@ -60,7 +60,7 @@ app.post('/add',(req,res)=>{
 app.post('/sub',(req,res)=>{
     let a=req.body.num1;
     let b=req.body.num2;
-    if(!a||!b){
+     if(a===undefined||b===undefined){
         res.status(404).send({
             status:"failure"
         });
@@ -101,7 +101,7 @@ app.post('/sub',(req,res)=>{
 app.post('/multiply',(req,res)=>{
     let a=req.body.num1;
     let b=req.body.num2;
-    if(!a||!b){
+     if(a===undefined||b===undefined){
         res.status(404).send({
             status:"failure"
         });
