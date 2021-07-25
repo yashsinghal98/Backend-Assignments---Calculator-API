@@ -139,7 +139,7 @@ app.post('/multiply',(req,res)=>{
     };
 })
 
-app.post('/division',(req,res)=>{
+app.post('/divide',(req,res)=>{
     let a=parseFloat( req.body.num1);
     let b=parseFloat(req.body.num2);
     if(a===undefined||b===undefined){
